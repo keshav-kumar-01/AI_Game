@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚔ Shadow Fight — RL AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔</text></svg>">
+</head>
+<body>
+
+    <div class="game-title">Shadow Fight</div>
+
+    <div class="game-container">
+        <canvas id="gameCanvas" width="1200" height="600"></canvas>
+    </div>
+
+    <div class="touch-controls">
+        <div class="touch-dpad">
+            <button class="t-btn" data-key="ArrowLeft" title="Move Left">◀ LEFT</button>
+            <div class="t-dpad-col">
+                <button class="t-btn" data-key="ArrowUp" title="Jump">▲ JUMP</button>
+                <button class="t-btn" data-key="ArrowDown" title="Crouch">▼ DUCK</button>
+            </div>
+            <button class="t-btn" data-key="ArrowRight" title="Move Right">RIGHT ▶</button>
+        </div>
+        <div class="touch-actions">
+            <button class="t-btn t-punch" data-key="j" title="Punch (J / Space)">👊 PUNCH</button>
+            <button class="t-btn t-kick" data-key="k" title="Kick (K)">🥋 KICK</button>
+            <button class="t-btn t-block" data-key="l" title="Block (L / Shift)">🛡️ BLOCK</button>
+            <button class="t-btn t-special" data-key="i" title="Special Attack (I / E)">⚡ SPECIAL</button>
+        </div>
+    </div>
+
+    <div class="controls-hint">
+        <span class="key">WASD</span> / <span class="key">←↑↓→</span> Move & Jump
+        <span class="separator">|</span>
+        <span class="key">J</span> / <span class="key">F</span> / <span class="key">SPACE</span> Punch
+        <span class="separator">|</span>
+        <span class="key">K</span> / <span class="key">G</span> Kick
+        <span class="separator">|</span>
+        <span class="key">L</span> / <span class="key">SHIFT</span> Block
+        <span class="separator">|</span>
+        <span class="key">I</span> / <span class="key">E</span> Special
+        <br>
+        <span class="key">↑</span>+<span class="key">Punch</span> Uppercut
+        <span class="separator">•</span>
+        <span class="key">↑</span>+<span class="key">Kick</span> Roundhouse
+        <span class="separator">•</span>
+        <span class="key">→</span>+<span class="key">Punch</span> Dash Strike
+        <span class="separator">•</span>
+        <span class="key">↓</span>+<span class="key">Kick</span> Sweep
+        <span class="separator">|</span>
+        <span class="key">ESC</span> Pause
+        <span class="separator">|</span>
+        <span class="key">Tab</span> AI Stats
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
